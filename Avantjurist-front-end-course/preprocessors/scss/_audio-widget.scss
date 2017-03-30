@@ -1,0 +1,167 @@
+.audio-widget {
+    .right {
+        @include float(right);
+    }
+
+    .left {
+        @include float;
+    }
+    @include widget-form(713px, 186px);
+    @include indent;
+    padding: 8px;
+
+    figure {
+        width: 126px;
+        margin: 0 26px 0 0;
+
+        img {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        figcaption {
+            button {
+                @include size(100%, 40px);
+                @include back-color(#526e82);
+                color: white;
+                font-weight: bold;
+                text-align: left;
+                padding: 0 14px;
+
+                .sprite-follow-icon {
+                    @include size(13px, 13px);
+                    background-position: -86px -128px;
+                }
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 11px;
+                }
+
+                &:hover {
+                    @include back-color(invert(#526e82));
+                }
+            }
+        }
+    }
+
+    .audio-content {
+        width: 557px;
+
+        h2 {
+            margin: 13px 0 0;
+        }
+
+        h3 {
+            margin: 9px 0 0;
+            font-size: 23px;
+        }
+
+        .audio-progress-container {
+            margin-top: 13px;
+            position: relative;
+
+            span {
+                margin-right: 5px;
+            }
+
+            .audio-progress-bar {
+                @include size(487px, 9px);
+                background-color: #efefef;
+                position: relative;
+                top: 5px;
+                @include border-rad(5px);
+
+                .audio-loaded {
+                    @include border-rad(5px);
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: #bbfdf1;
+                }
+
+                .audio-current {
+                    @include border-rad(5px);
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: #4cd9c0;
+                }
+            }
+        }
+
+        nav {
+            margin-top: 25px;
+            width: 584px;
+
+            ul {
+                padding: 0;
+                list-style: none;
+                font-size: 0;
+
+                li {
+                    @include box;
+                    display: inline-block;
+                    text-align: right;
+                    padding-right: 7px;
+                    width: 12.5%;
+
+                    .sprite-Add-_1_ {
+                        @include size(23px, 23px);
+                        background-position: -42px -5px;
+                    }
+
+                    .sprite-Heart {
+                        @include size(21px, 18px);
+                        background-position: -5px -63px;
+                    }
+
+                    .sprite-Repeat {
+                        @include size(24px, 17px);
+                        background-position: -89px -63px;
+                    }
+
+                    .sprite-Share {
+                        @include size(21px, 18px);
+                        background-position: -123px -63px;
+                    }
+
+                    .sprite-Shuffle {
+                        @include size(22px, 18px);
+                        background-position: -89px -91px;
+                    }
+
+                    .sprite-next {
+                        @include size(22px, 17px);
+                        background-position: -109px -128px;
+                    }
+
+                    .play {
+                        @include size(46px, 46px);
+                        @include border-rad;
+                        background: #4cd9c0;
+                    }
+
+                    .sprite-play {
+                        @include size(13px, 15px);
+                        background-position: -158px -74px;
+                    }
+
+                    .sprite-previous {
+                        @include size(22px, 17px);
+                        background-position: -171px -5px;
+                    }
+
+                    button {
+                        &:hover {
+                            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

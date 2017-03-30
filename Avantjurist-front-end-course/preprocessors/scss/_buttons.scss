@@ -1,0 +1,105 @@
+.buttons {
+    @include widget-form(305px, 200px);
+    padding: 14px 10px 11px 12px;
+    @include box;
+    @include indent;
+
+    form {
+        .valid {
+            @include size(215px, 51px);
+            border: 2px solid #4cd9c0;
+            @include border-rad(13px);
+            padding-left: 13px;
+            @include box;
+            @include float;
+        }
+
+        button {
+            @include size(51px, 52px);
+            @include border-rad(13px);
+            border: 2px solid #ff8989;
+            @include box;
+            @include float(right);
+
+            .sprite-check {
+                @include size(28px, 18px);
+                background-position: -48px -128px;
+            }
+
+            &:hover {
+                @include back-color(invert(#fff));
+            }
+        }
+
+        .slider {
+            @include size(213px, 8px);
+            @include back-color(#526e82);
+            @include border-rad(13px);
+            margin: 33px 0;
+            @include float;
+            position: relative;
+
+            .uncovered {
+                @include size(73px, 8px);
+                @include border-rad(13px);
+                @include back-color(#99b5c9);
+                @include float(right);
+            }
+
+            .slider-round {
+                @include size(20px, 20px);
+                @include back-color(#526e82);
+                @include border-rad;
+                position: absolute;
+                left: 134px;
+                bottom: -6px;
+            }
+        }
+
+        .ellipse {
+            @include size(42px, 42px);
+            border: 2px solid #dddddd;
+            @include border-rad;
+            padding: 5px;
+            @include box;
+            @include float(right);
+            margin-top: 17px;
+            margin-right: 3px;
+
+            .circle {
+                @include size(28px, 28px);
+                @include border-rad;
+                @include back-color(#ddd);
+            }
+        }
+
+        .invalid {
+            @include size(215px, 51px);
+            border: 2px solid #ff8989;
+            @include border-rad(13px);
+            padding-left: 13px;
+            @include box;
+            @include float;
+        }
+
+        .radio {
+            button {
+                @include size(42px, 42px);
+                border: 2px solid #4cd9c0;
+                @include border-rad;
+                padding: 5px;
+                // background: #fff;
+                @include box;
+                @include float(right);
+                margin-top: 7px;
+                margin-right: 3px;
+
+                .circle-select {
+                    @include size(28px, 28px);
+                    @include border-rad;
+                    @include back-color(#4cd9c0);
+                }
+            }
+        }
+    }
+}

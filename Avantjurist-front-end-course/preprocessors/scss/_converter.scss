@@ -1,0 +1,95 @@
+.converter {
+    @include widget-form(307px, 290px);
+    @include indent;
+
+    .money-block {
+        @include size(100%, 54px);
+        @include box;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                @include box;
+                padding: 27px 0;
+                border-bottom: {
+                    width: 1px;
+                    style: solid;
+                    color: #e2e2e2;
+                }
+
+                .money-name {
+                    @include font-GothamRoundedMedium(#b2b2b2, 14px);
+                    @include size(306px-205px, 54px);
+                    padding-top: 21px;
+                    text-align: center;
+                    border-right: {
+                        width: 1px;
+                        style: solid;
+                        color: #d7d7d7;
+                    }
+                    @include box;
+                    @include float;
+                }
+
+                .money-value {
+                    @include size(205px, 54px);
+                    font-size: 30px;
+                    padding: 12px 0 0 54px;
+                    @include box;
+                    @include float(right);
+
+                    label {
+                        @include font-default(#b2b2b2, 19px);
+                        text-align: right;
+                    }
+
+                    input {
+                        @include font-default(#b2b2b2, 30px);
+                        @include size(129px, 100%);
+                        @include box;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+
+            li:last-child {
+                border: none;
+            }
+        }
+
+        .main-base {
+            @include size(100%, 64px);
+            @include box;
+            display: inline-block;
+            @include back-color(#526e82);
+
+            button {
+                @include size(100%/3, 100%);
+                @include float;
+                @include box;
+
+                .sprite-View-Chart {
+                    @include size(33px, 13px);
+                    background-position: -5px -119px;
+                }
+
+                .sprite-Add {
+                    @include size(27px, 27px);
+                    background-position: -5px -5px;
+                }
+
+                .sprite-number-pad {
+                    @include size(31px, 30px);
+                    background-position: -141px -128px;
+                }
+
+                &:hover {
+                    background-color: darken(#ff8989, 5%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="fw_styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="converter clearfix" tabindex="0" aria-describedby="form-mega">
+    <form class="money-block" id="form-mega">
+      <ul class="converter-block">
+        <li>
+          <div class="money-name">
+            USD
+          </div>
+          <div class="money-value">
+            <label for="money-label">$</label>
+            <input name="dollars" aria-label="enter price in dollars" value="356.3" placeholder="enter price to convert" type="text">
+          </div>
+        </li>
+        <li>
+          <div class="money-name">
+            GBP
+          </div>
+          <div class="money-value">
+            <label for="money-label">&#163;</label>
+            <input name="pounds" aria-label="enter price in pounds" value="156.3" placeholder="enter price to convert" type="text">
+          </div>
+        </li>
+      </ul>
+      <div class="main-base">
+        <button class="chart-base" title="View-Chart">
+          <i class="sprite sprite-View-Chart"></i>
+        </button>
+        <button class="chart-base" title="add conver money">
+          <i class="sprite sprite-Add"></i>
+        </button>
+        <button class="chart-base">
+          <i class="sprite sprite-number-pad" title="number pad"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="calendar clearfix" tabindex="0">
+    <div class="month-year-base">
+      <a href="#" aria-label="previous month">
+        <i class="sprite sprite-left">
+        </i>
+      </a>
+      <div class="month-year">
+        <a href="#" aria-label="year 2012"><p>2012</p></a>
+        <a href="#" aria-label="month July"><h4>JULY</h4></a>
+      </div>
+      <a href="#" aria-label="next month">
+        <i class="sprite sprite-right">
+        </i>
+      </a>
+    </div>
+    <div class="week-base">
+      <table class="week-table" role="presentation">
+        <tbody>
+          <tr>
+            <td><a href="#" role="button" aria-label="Sunday">S</a></td>
+            <td><a href="#" role="button" aria-label="Monday">M</a></td>
+            <td><a href="#" role="button" aria-label="Tuesday">T</a></td>
+            <td><a href="#" role="button" aria-label="Wednesday">W</a></td>
+            <td><a href="#" role="button" aria-label="Thursday">T</a></td>
+            <td><a href="#" role="button" aria-label="Friday">F</a></td>
+            <td><a href="#" role="button" aria-label="Saturday">S</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form action="">
+      <table class="calendar-table" role="presentation">
+        <tbody>
+          <tr>
+            <td><a href="#" role="button">1</a></td>
+            <td><a href="#" role="button">2</a></td>
+            <td><a href="#" role="button">3</a></td>
+            <td><a href="#" role="button">4</a></td>
+            <td><a href="#" role="button">5</a></td>
+            <td class="red-day"><a href="#" role="button" style="color: #fff" aria-label="marked day">6</a></td>
+            <td><a href="#" role="button">7</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" role="button">8</a></td>
+            <td><a href="#" role="button">9</a></td>
+            <td><a href="#" role="button">10</a></td>
+            <td><a href="#" role="button">11</a></td>
+            <td><a href="#" role="button">12</a></td>
+            <td><a href="#" role="button">13</a></td>
+            <td><a href="#" role="button">14</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" role="button">15</a></td>
+            <td><a href="#" role="button">16</a></td>
+            <td><a href="#" role="button">17</a></td>
+            <td><a href="#" role="button">18</a></td>
+            <td><a href="#" role="button">19</a></td>
+            <td><a href="#" role="button">20</a></td>
+            <td><a href="#" role="button">21</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" role="button">22</a></td>
+            <td><a href="#" role="button">23</a></td>
+            <td><a href="#" role="button">24</a></td>
+            <td><a href="#" role="button">25</a></td>
+            <td><a href="#" role="button">26</a></td>
+            <td><a href="#" role="button">27</a></td>
+            <td><a href="#" role="button">28</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" role="button">29</a></td>
+            <td><a href="#" role="button">30</a></td>
+            <td><a href="#" role="button">31</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <div class="weather clearfix" tabindex="0" title="switches automatically to the next city">
+    <div role="slider" tabindex="0" aria-describedby="weather-img">
+      <figure class="weather-block" aria-labeledby="weather-img">
+        <img src="weather.jpg" alt="Zagora, Greece; 73 degrees; 8:34 am" id="weather-img">
+        <figcaption>
+          <p class="temperature" aria-hidden="true">
+            73
+          </p>
+          <p aria-hidden="true">
+            Zagora, Greece 8:34 am
+          </p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="main-base">
+      <button class="farenhait-base">
+        <i class="sprite sprite-F" title="Fahrenheit"></i>
+      </button>
+      <button type="button" name="button" class="weather-button" title="Celsius">
+        <i class="sprite sprite-C"></i>
+      </button>
+      <button type="button" name="button" class="weather-button" title="add new city">
+        <i class="sprite sprite-add-new"></i>
+      </button>
+      <button type="button" name="button" class="weather-button" title="list view city">
+        <i class="sprite sprite-List-view"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="login clearfix" tabindex="0">
+    <form action="" class="login-block">
+      <dl>
+        <dt class="not-validated">
+          <i class="sprite sprite-user"></i>
+        </dt>
+        <dd><input placeholder="Email Address..." type="text"></dd>
+        <dt>
+          <i class="sprite sprite-lock"></i>
+        </dt>
+        <dd><input placeholder="Password..." type="text"></dd>
+      </dl>
+      <button class="sign-up">
+        SIGN UP
+      </button>
+      <button class="sign-in">
+        SIGN IN
+      </button>
+    </form>
+  </div>
+
+  <div class="buttons clearfix" tabindex="0">
+    <form action="" class="buttons-block">
+      <input placeholder="Valid input" type="text" class="valid">
+      <button type="checkbox" name="button" class="hybrid-checkbox" aria-checked="true" role="checkbox">
+        <i class="sprite sprite-check"></i>
+      </button>
+      <div class="slider" tabindex="0"
+      title="n correct answers scored. Enter more value to change">
+        <div class="uncovered">
+        </div>
+        <div class="slider-round">
+        </div>
+      </div>
+      <div class="ellipse">
+        <div class="circle"></div>
+      </div>
+      <input placeholder="Invalid input" type="text" class="invalid">
+      <div class="radio" role="radiogroup">
+        <button class="ellipse-select" aria-checked="true" role="radio">
+          <div class="circle-select"></div>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="audio-widget clearfix" tabindex="0">
+  		<figure class="left">
+  			<img class="audio-image" src="imeges/FadedPaperFigures.jpg" alt="Artist art">
+  			<figcaption>
+  				<button class="follow-button">
+  					<i class="sprite sprite-follow-icon"></i>
+            <span class="sprite-caption">FOLLOW</span></button>
+  			</figcaption>
+  		</figure>
+  		<div class="audio-content left">
+  			<h2>Faded Paper Figures</h3>
+  			<h3>Invent all again</h4>
+  			<div class="audio-progress-container clearfix">
+  				<span class="audio-progress-desc right">-1:57</span>
+  				<div class="audio-progress-bar" tabindex="0" title="click to right arrow or left arrow to rewind the song">
+  					<div class="audio-loaded" style="width: 55%"></div>
+  					<div class="audio-current" style="width: 45%"></div>
+  				</div>
+  			</div>
+  			<nav class="audio-nav right">
+  				<ul class="cols-container-8">
+  					<li><button class="play" title="41 seconds Playback"><i class="sprite sprite-play"></i></button></li>
+  					<li><button class="sprite sprite-previous" title="previous song"></button></li>
+  					<li><button class="sprite sprite-next" title="next sont"></button></li>
+  					<li><button class="sprite sprite-Shuffle" title="shuffle song"></button></li>
+  					<li><button class="sprite sprite-Repeat" title="repeat song"></button></li>
+  					<li><button class="sprite sprite-Heart" title="like"></button></li>
+  					<li><button class="sprite sprite-Add-_1_" title="add song"></button></li>
+  					<li><button class="sprite sprite-Share" title="share song"></button></li>
+  				</ul>
+  			</nav>
+  		</div>
+  	</div>
+
+  <div class="mail clearfix" tabindex="0">
+    <div class="nav-base">
+      <button type="button" name="button" class="menu-base" title="main menu">
+        <i class="sprite-menu"></i>
+      </button>
+      <button type="button" name="button" class="mail-add" title="begin chat with new friend">
+        <i class="sprite-add_new"></i>
+      </button>
+    </div>
+    <ul class="people">
+      <li>
+        <div class="avatar-block">
+          <a href="#"><img src="imeges/1.jpg" alt="Yaroslav Lozhkin " class="avatar"></a>
+        </div>
+        <div class="text-block">
+          <a href="#" title="online"><h3>Yaroslav Lozhkin </h3></a>
+          <p>Alright got it!</p>
+        </div>
+        <div class="check-block">
+          <i class="sprite sprite-Ellipse-11"></i>
+        </div>
+      </li>
+      <li>
+        <div class="avatar-block">
+          <a href="#"><img src="imeges/2.jpg" alt="Michael Zenaty" class="avatar"></a>
+        </div>
+        <div class="text-block">
+          <a href="#" title="sent message offline"><h3>Michael Zenaty</h3></a>
+          <p><i class="sprite sprite-success"></i>Sent</p>
+        </div>
+        <div class="check-block">
+          <i class="sprite sprite-Ellipse-11-copy"></i>
+        </div>
+      </li>
+      <li>
+        <div class="avatar-block">
+          <a href="#"><img src="imeges/3.jpg" alt="Wells Riley" class="avatar"></a>
+        </div>
+        <div class="text-block">
+          <a href="#" title="typing message"><h3>Wells Riley</h3></a>
+          <p>Typing...</p>
+        </div>
+        <div class="check-block">
+        </div>
+      </li>
+      <li>
+        <div class="avatar-block">
+          <a href="#"><img src="imeges/4.jpg" alt="Matt Vickers" class="avatar"></a>
+        </div>
+        <div class="text-block">
+          <a href="#" title="Not delivered message"><h3>Matt Vickers</h3></a>
+          <p><i class="sprite sprite-failed"></i>Not delivered</p>
+        </div>
+        <div class="check-block">
+
+        </div>
+      </li>
+      <li>
+        <div class="avatar-block">
+          <a href="#"><img src="imeges/5.jpg" alt="Divya Manian" class="avatar"></a>
+        </div>
+        <div class="text-block">
+          <a href="#" title="online"><h3>Divya Manian</h3></a>
+          <p>You can download it on git...</p>
+        </div>
+        <div class="check-block">
+          <i class="sprite sprite-Ellipse-11"></i>
+        </div>
+      </li>
+      <li>
+        <div class="avatar-block">
+          <a href="#"><img src="imeges/6.jpg" alt="Vin Thomas" class="avatar"></a>
+        </div>
+        <div class="text-block">
+          <a href="#"><h3>Vin Thomas</h3></a>
+          <p>Thank you!</p>
+        </div>
+        <div class="check-block">
+
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

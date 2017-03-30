@@ -1,0 +1,68 @@
+.weather {
+    @include widget-form(307px, 312px);
+    @include indent;
+
+    figure {
+        @include size(100%, 248px);
+        position: relative;
+    }
+
+    figcaption {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        padding: 12px;
+
+        .temperature {
+            @include font-GothamRoundedMedium(#fff, 36px);
+            line-height: 36px;
+            margin: 0;
+        }
+
+        p {
+            line-height: 16px;
+            width: 120px;
+            @include font-GothamRoundedMedium(#fff,12px);
+        }
+    }
+
+    .main-base {
+        .farenhait-base {
+            @include size(79px, 64px);
+            @include back-color(#ff8989);
+            @include box;
+            @include float;
+
+            .sprite-F {
+                width: 21px;
+                height: 30px;
+                background-position: -111px -23px;
+            }
+        }
+
+        button {
+            @include size(99%/4, 64px);
+            @include box;
+            @include float;
+
+            .sprite-C {
+                @include size(26px, 30px);
+                background-position: -75px -5px;
+            }
+
+            .sprite-add-new {
+                @include size(27px, 27px);
+                background-position: -121px -91px;
+            }
+
+            .sprite-List-view {
+                @include size(43px, 25px);
+                background-position: -36px -63px;
+            }
+
+            &:hover {
+                @include back-color(lighten(#ff8989,10%))
+            }
+        }
+    }
+}

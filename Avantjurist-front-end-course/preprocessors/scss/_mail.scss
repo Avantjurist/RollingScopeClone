@@ -1,0 +1,97 @@
+.mail{
+  @include widget-form(307px, 532px);
+  @include indent;
+  .nav-base{
+    @include size(100%, 64px);
+    @include back-color(#4cd9c0);
+    .menu-base{
+      @include size(75px, 100%);
+      @include back-color(#41c0a9);
+      @include float;
+      @include box;
+      .sprite-menu {
+          background-image: url(menu.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          @include size(36px, 25px);
+      }
+      &:hover{
+        @include back-color(invert(#41c0a9));
+      }
+    }
+    .mail-add{
+      @include float(right);
+      @include size(55px, 100%);
+      .sprite-add_new {
+          background-image: url(add_new.png);
+          background-repeat: no-repeat;
+          display: inline-block;
+          @include size(27px, 27px);
+      }
+      &:hover{
+        @include back-color(invert(#4cd9c0));
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    li{
+      @include size(100%, 78px);
+      @include box;
+      border-bottom: 1px solid #e2e2e2;
+      .avatar-block{
+        @include size(75px, 100%);
+        @include float;
+        padding: 15px 0 0 15px;
+        @include box;
+        a{
+          @include size(50px, 50px);
+          @include border-rad;
+        }
+      }
+      .text-block{
+        @include float;
+        a{
+          h3{
+            @include font-default(#bac2c7, 14px);
+            margin: 20px 9px 0 9px;
+            &:hover{
+              color: invert(#bac2c7);
+            }
+          }
+        }
+        p{
+          i{
+            @include float;
+          }
+          @include font-default(#d7dee3, 10px);
+          margin: 12px 9px;
+          @include float;
+          .sprite-failed {
+            @include size(9px, 9px);
+              background-position: -5px -91px;
+              margin-right: 7px;
+          }
+          .sprite-success {
+            @include size(14px, 9px);
+              background-position: -182px -67px;
+              margin-right: 7px;
+          }
+        }
+      }
+      .check-block{
+        @include float(right);
+        padding: 35px 17px 0 0;
+        .sprite-Ellipse-11 {
+          @include size(8px, 8px);
+            background-position: -111px -5px;
+        }
+
+        .sprite-Ellipse-11-copy {
+          @include size(8px, 8px);
+            background-position: -129px -5px;
+        }
+      }
+    }
+  }
+}

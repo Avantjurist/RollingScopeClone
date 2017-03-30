@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #374144;
+}
+
+
+#score {
+  color: white;
+  font-size: 2em;
+}
+
+#level {
+  color: white;
+  font-size: 2em;
+}
+
+#lives {
+  color: white;
+  font-size: 2em;
+}
+
+#gameTime {
+  color: white;
+  font-size: 2em;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#game-over, #game-over-overlay, #next-level {
+    margin: auto;
+    width: 480px;
+    height: 512px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+#game-over-overlay {
+    background-color: black;
+    opacity: 1;
+}
+
+#game-over {
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+#game-over h1 {
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+#game-over button {
+    font-size: 1.5em;
+}
+
+
+#next-level {
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+#next-level h1 {
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+#next-level button {
+    font-size: 1.5em;
+}

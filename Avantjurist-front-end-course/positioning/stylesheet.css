@@ -1,0 +1,99 @@
+body {
+	height: 2000px;
+}
+.avatar {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 3px solid blue;
+	position: absolute;
+	z-index: 2;
+	top: 5px;
+	left: 5px;
+}
+	.image {
+		position: absolute;
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+}
+.sprite-twitter {
+	background: url('imgs/sprites.png') no-repeat -22px -17px;
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.sprite-printerest {
+	background: url('imgs/sprites.png') no-repeat -81px -17px;
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	top: 185px;
+	left: 95px;
+}
+.sprite-tumbler {
+	background: url('imgs/sprites.png') no-repeat -141px -17px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 137px;
+	left: 172px;
+}
+.sprite-facebook {
+	background: url('imgs/sprites.png') no-repeat -207px -16px;
+	width: 32px;
+	height: 33px;
+	position: absolute;
+	top: 168px;
+	left: 138px;
+}
+.central-elems {
+	margin: 150px auto;
+	height: 750px;
+	width: 600px;
+
+}
+.rectangle {
+	height: 750px;
+	width: 600px;
+	position: absolute;
+}
+.top {
+	background-color: #CD5C5C;
+}
+.middle {
+	background-color: #0000CD;
+	margin-top:5px;
+	margin-left:5px;
+}
+.bottom {
+	background-color: #4682B4;
+	margin-top:10px;
+	margin-left:10px;
+}
+.popUp {
+	width: 330px;
+	height: 130px;
+	background-color: #808080;
+	position: fixed;
+	bottom: 150px;
+	right: 0px;
+	opacity: 0.9;
+}
+.square {
+	width: 85px;
+	height: 85px;
+	margin: 22px;
+	background-color: #FFD700;
+	float: left;
+}
+.text-block {
+	height: 86px;
+	margin-top: 25px;
+	color: white;
+}
+.text-block p, .text-block h4 {
+	margin: 0;
+}

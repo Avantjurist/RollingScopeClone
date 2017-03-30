@@ -1,0 +1,34 @@
+@import "var";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "../fonts/";
+// @import "../node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot";
+// @import "../node_modules/bootstrap-sass/assets/fonts/bootstrap";
+
+// $red: #ff0000;
+// $main-color: $red;
+// @mixin font-lato($weight: 300) {
+//     font-family: 'Lato', sans-serif;
+//     font-weight: $weight;
+//     font-size: 20px;
+//     color: #ff00ff;
+// }
+//
+// span {
+//     @include font-lato(900);
+// }
+//
+//   .main {
+//     &__article {
+//         &--marked-text {
+//             color: $main-color;
+//
+//             &:hover {
+//                 color: lighten($main-color, 20%);
+//             }
+//
+//             @at-root azaza{
+//               color: #ff00ff;
+//             }
+//         }
+//     }
+// }

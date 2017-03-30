@@ -1,0 +1,67 @@
+.login {
+    @include widget-form(307px, 209px);
+    @include indent;
+
+    form {
+        dl {
+            .not-validated {
+                border-left: 4px solid #ff8989;
+
+                .sprite-user {
+                    @include size(21px, 22px);
+                    background-position: -181px -86px;
+                    margin: 21px 0 0 23px;
+                }
+            }
+
+            dt {
+                @include size(70px, 73px);
+                @include float;
+                @include box;
+
+                .sprite-lock {
+                    @include size(18px, 24px);
+                    background-position: -154px -40px;
+                    margin: 21px 0 0 27px;
+                }
+            }
+
+            dd {
+                @include size(234px, 73px);
+                @include float(right);
+
+                input {
+                    @include size(234px, 73px);
+                    @include font-default(#bebebe, 15px);
+                    letter-spacing: 2.5px;
+                    border: none;
+                    @include box;
+                }
+            }
+        }
+
+        .sign-up {
+            @include size(156px, 64px);
+            @include float;
+            @include font-GothamRoundedBold(#627d90, 13px);
+            @include back-color(#7191a8);
+            border: none;
+
+            &:hover {
+                @include back-color(darken(#7191a8, 20%));
+            }
+        }
+
+        .sign-in {
+            @include size(151px, 64px);
+            @include float(right);
+            @include font-GothamRoundedBold(#fff, 13px);
+            @include back-color(#526e82);
+            border: none;
+
+            &:hover {
+                @include back-color(darken(#526e82, 20%));
+            }
+        }
+    }
+}

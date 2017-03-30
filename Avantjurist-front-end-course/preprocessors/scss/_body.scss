@@ -1,0 +1,78 @@
+@font-face {
+    font-family: GothamRoundedBook;
+    src: url("GothamRoundedBook.otf");
+}
+@font-face {
+    font-family: GothamRoundedBold;
+    src: url("GothamRoundedBold.otf");
+}
+@font-face {
+    font-family: GothamRoundedMedium;
+    src: url("GothamRoundedMedium.otf");
+}
+
+.sprite {
+    background-image: url("spritesheet.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+body {
+    background: #efefef;
+    padding: 57px 59px;
+    font-family: GothamRoundedBook;
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+}
+@mixin font-GothamRoundedMedium($color: black, $font-size: 10px) {
+    color: $color;
+    font-size: $font-size;
+    font-family: GothamRoundedMedium, sans-serif;
+}
+@mixin font-default($color: black, $font-size: 10px) {
+    color: $color;
+    font-size: $font-size;
+    font-family: GothamRoundedBook, sans-serif;
+}
+@mixin font-GothamRoundedBold($color: black, $font-size: 10px) {
+    color: $color;
+    font-size: $font-size;
+    font-family: GothamRoundedBold;
+}
+@mixin back-color($backgroung-color: #fff) {
+    background-color: $backgroung-color;
+}
+@mixin box {
+    box-sizing: border-box;
+}
+@mixin indent {
+    margin-bottom: 70px;
+}
+@mixin widget-form($width, $height) {
+    width: $width;
+    height: $height;
+    background: #fff;
+}
+@mixin size($width, $height:100%) {
+    width: $width;
+    height: $height;
+}
+@mixin float($float: left) {
+    float: $float;
+}
+@mixin border-rad($border-radius: 50%) {
+    border-radius: $border-radius;
+}

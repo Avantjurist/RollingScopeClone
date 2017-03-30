@@ -1,0 +1,98 @@
+.calendar {
+    @include widget-form(307px, 375px);
+    @include indent;
+
+    .month-year-base {
+        @include size(100%, 140px-55px);
+        @include back-color(#526e82);
+        padding: 29px 13px;
+        @include box;
+
+        .sprite-left {
+            @include size(14px, 25px);
+            background-position: -147px -5px;
+            @include float;
+        }
+
+        .sprite-right {
+            @include size(14px, 25px);
+            background-position: -182px -32px;
+            @include float(right);
+        }
+
+        .month-year {
+            @include float;
+            padding-left: 105px;
+
+            p {
+                top: -10px;
+                @include font-default(#dcdedf, 12px);
+                margin: 0 0 0 3px;
+                position: relative;
+                @at-root {
+                    h4 {
+                        @include font-default(#fff, 13px);
+                    }
+                }
+            }
+        }
+    }
+
+    .week-base {
+        table {
+            @include size(100%, 56px);
+            @include font-GothamRoundedBold(#3dad99, 13px);
+            @include back-color(#4cd9c0);
+            padding: 3.5px;
+
+            tr {
+                height: 43px;
+            }
+
+            td {
+                text-align: center;
+                padding: 0 12px;
+
+                a {
+                    &:hover {
+                        color: darken(#3dad99, 20%);
+                    }
+                    color: #3dad99;
+                }
+            }
+        }
+    }
+
+    form {
+        table {
+            padding: 3.5px;
+
+            tr {
+                height: 43px;
+                vertical-align: middle;
+            }
+
+            td {
+                text-align: center;
+                @include font-GothamRoundedMedium(#fff, 13px);
+                padding: 0 12px;
+
+                a {
+                    &:hover {
+                        color: darken(#9d9d9d, 70%);
+                    }
+                    color: #9d9d9d;
+                }
+            }
+
+            .red-day {
+                @include back-color(#ff8989);
+                @include border-rad;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
